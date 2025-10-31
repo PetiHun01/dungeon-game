@@ -1,5 +1,10 @@
-import java.util.*;
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.List;
+import java.util.ArrayList;
+import java.awt.Color;
+import java.awt.Graphics;
 
 public class LevelSelector {
     private List<String> levelFiles = new ArrayList<>();

@@ -17,7 +17,13 @@ public class MenuPanel extends JPanel {
         exitButton.setBackground(Color.DARK_GRAY);
         exitButton.setForeground(Color.WHITE);
 
-        startButton.addActionListener(e -> Main.startGame());
+        startButton.addActionListener(e -> {
+            frame.getContentPane().removeAll();
+            frame.add(new LevelSelectPanel(frame));
+            frame.requestFocusInWindow();
+            frame.revalidate();
+            frame.repaint();
+        });
         exitButton.addActionListener(e -> System.exit(0));
 
         GridBagConstraints gbc = new GridBagConstraints();
