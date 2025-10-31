@@ -25,13 +25,7 @@ public class GamePanel extends JPanel implements Runnable {
     }
     public void loadLevel(String levelPath) {
         System.out.println("Loading level from: " + levelPath);
-
-        // Example: clear any previous entities, tiles, etc.
-        // entityManager.clear();
-        // tileManager.loadFromFile(levelPath);
-
-        // You can put your real map loading logic here.
-        // For now, this just confirms the level file is passed correctly.
+        //safety measure
     }
 
     public void startGame() {

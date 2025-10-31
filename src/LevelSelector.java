@@ -35,6 +35,16 @@ public class LevelSelector {
         return levelNames.get(currentSelection);
     }
 
+    public int getLevelCount() {
+        return levelNames.size();
+    }
+    public String getLevelName(int idx) {
+        return levelNames.get(idx);
+    }
+    public int getCurrentIndex() {
+        return currentSelection;
+    }
+
     public void drawMenu(Graphics g) {
         for (int i = 0; i < levelNames.size(); i++) {
             if (i == currentSelection) g.setColor(Color.RED);
